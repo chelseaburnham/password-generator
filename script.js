@@ -8,13 +8,22 @@ var characters = {
 };
 
 function generatePassword() {
-  
+  var characterLength = prompt("How many characters would you like in your password?");
+  if (characterLength < 8) {
+    alert("You must have more than 8 characters.")
+  };
+  if (characterLength > 128) {
+    alert("You must have less than 128 characters.")
+  };
+  if (characterLength > 8 && characterLength < 128) {
+    var characterSpecial = confirm("Would you like special characters?")
+  };
 
   /* 1. window prompt for criteria (length between 8 and 128 characters)
     2. confirm characters (lowercase, uppercase, special, and numeric)
     3. generate the password */
 
-
+  return ;
 }
 
 // Get references to the #generate element
