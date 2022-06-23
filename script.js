@@ -7,6 +7,16 @@ var characters = {
   number: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 
+function generatePassword() {
+  
+
+  /* 1. window prompt for criteria (length between 8 and 128 characters)
+    2. confirm characters (lowercase, uppercase, special, and numeric)
+    3. generate the password */
+
+
+}
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
