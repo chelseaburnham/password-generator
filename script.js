@@ -90,8 +90,11 @@ if (!characterSpecial && !characterUpper && characterLower && characterNumber) {
   characters = lower.concat(number);
 };
 
-for (var i = 0; i < characterLength.length; i++) {
-  randomPassword = characters[Math.floor(Math.random() * characterLength)];
+var randomPassword = ""
+
+// iterating the different options based on the length
+for (var i = 0; i < characterLength; i++) {
+  randomPassword = randomPassword + characters[Math.floor(Math.random() * characters.length)];
 }
 
 return randomPassword;
